@@ -1,0 +1,33 @@
+{
+    "productName": "acmertool",
+    "appId": "app.acmer3d.com",
+    "mac": {
+        "icon": "electron/resource/images/code.icns",
+        "target": "dmg"
+    },
+    "win": {
+        "icon": "electron/resource/images/code.ico",
+        "target": [
+            {
+                "target": "nsis",
+                "arch": [
+                    "x64"
+                ]
+            }
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "perMachine": true,
+        "allowToChangeInstallationDirectory": true
+    },
+    // files 属性用于指定在构建应用程序时需要包含的文件或目录
+    "files": [
+        "dist",
+        "dist-electron"
+    ],
+    // 定义输出目录
+    "directories": {
+        "output": "build"
+    }
+}
